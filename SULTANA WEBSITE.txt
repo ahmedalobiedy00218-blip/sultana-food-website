@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultana Food Industries Company - Quality Food Products</title>
+    <style>
+        /* Warm & Rich Color Scheme */
+        :root {
+            --primary-color: #8B0000; /* Deep Burgundy */
+            --secondary-color: #DAA520; /* Soft Gold */
+            --light-bg: #FFF8DC; /* Light Cream */
+            --dark-text: #333;
+            --light-text: white;
+            --dark-bg: #333;
+        }
+
+        /* Basic inline styles for readability */
+        body { 
+            font-family: Georgia, serif; /* Using a classic font */
+            margin: 0; 
+            padding: 0; 
+            color: var(--dark-text); 
+            background-color: var(--light-bg);
+        }
+        
+        header { 
+            background-color: var(--primary-color); 
+            color: var(--light-text); 
+            padding: 1.5em 0; 
+            text-align: center; 
+        }
+        
+        nav a { 
+            color: var(--light-text); 
+            margin: 0 20px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero { 
+            background-color: var(--light-bg); 
+            padding: 80px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        /* Styling for the Hero Image */
+        .hero-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .container { 
+            width: 80%; 
+            max-width: 1100px;
+            margin: 0 auto; 
+            padding: 40px 0; 
+        }
+        
+        section { 
+            padding: 40px 0; 
+            border-bottom: 1px solid #ddd; 
+        }
+        
+        h2 { 
+            color: var(--primary-color); 
+            text-align: center; 
+            margin-bottom: 40px; 
+            font-size: 2.2em;
+        }
+        
+        /* Product Card Styling */
+        .product-card { 
+            border: 2px solid var(--secondary-color); 
+            padding: 20px; 
+            margin: 15px; 
+            display: inline-block; 
+            width: calc(33% - 30px); /* Makes cards roughly one-third width */
+            text-align: center; 
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); 
+            background-color: white;
+            vertical-align: top;
+        }
+
+        /* Styling for images inside product cards */
+        .product-card img {
+            width: 100%;
+            height: 150px; /* Fixed height for consistent look */
+            object-fit: cover; /* Ensures image covers area without distortion */
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        
+        /* Button Style */
+        .cta-button {
+            display: inline-block; 
+            margin-top: 25px; 
+            padding: 12px 30px; 
+            background-color: var(--secondary-color); 
+            color: var(--dark-text); 
+            text-decoration: none; 
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #C59313; /* Slightly darker gold on hover */
+        }
+
+        footer { 
+            background-color: var(--dark-bg); 
+            color: var(--light-text); 
+            text-align: center; 
+            padding: 25px 0; 
+        }
+        
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sultana Food Industries Company</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="" alt="Assortment of high-quality fresh food ingredients" class="hero-image">
+        
+        <h2>Taste the Quality. Trust the Sultana Brand.</h2>
+        <p style="font-size: 1.2em;">A global leader in food manufacturing, committed to delivering safe, delicious, and high-quality products worldwide.</p>
+        <a href="#products" class="cta-button">Explore Our Products</a>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Sultana Food Industries</h2>
+        <p style="text-align: center; line-height: 1.6;">Founded on the principles of excellence and integrity, Sultana Food Industries has grown into a trusted name. We source the finest ingredients and utilize state-of-the-art technology to ensure every item we produce meets the highest international standards. Our mission is to nourish communities through sustainable and innovative food solutions.</p>
+    </section>
+
+    <section id="products" class="container">
+        <h2>Our Featured Products</h2>
+        
+        <div style="text-align: center;">
+            <div class="product-card">
+                <h3>Canned Fruits & Vegetables</h3>
+                <p>Freshly picked and perfectly preserved to retain flavor and nutrients year-round.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="" alt="Healthy cooking ingredients like spices and oil">
+                <h3>Premium Oils & Grains</h3>
+                <p>Healthy cooking oils and quality grains essential for any wholesome meal.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="" alt="Colorful selection of spices and herbs">
+                <h3>Specialty Sauces & Spices</h3>
+                <p>Bringing authentic and vibrant flavors to kitchens across the globe.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Get In Touch</h2>
+        <p style="text-align: center;">For sales inquiries, partnership opportunities, or quality feedback, please contact us.</p>
+        
+        <div style="text-align: center; margin-top: 30px; font-size: 1.1em;">
+            <p><strong>General Inquiries:</strong> <a href="mailto:ifgcfoodies@gmail.com" style="color: var(--primary-color);">ifgcfoodies@gmail.com</a></p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Address:</strong> 123 Food Quality Blvd, Global City, 90210</p>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sultana Food Industries Company. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
